@@ -20,8 +20,12 @@ Output:
 ['cat', 'frog', 'dog', 'dog']
 */
 
-export function makeReversedArrayOfTypes(arr) {
-    return [];
+export function makeReversedArrayOfTypes(types) {
+    const reverseTypes = [];
+    types.reverse();
+    types.forEach(element => reverseTypes.push(element.type));
+    
+    return reverseTypes;
 }
 
 /*
