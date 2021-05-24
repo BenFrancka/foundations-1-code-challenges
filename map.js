@@ -33,7 +33,7 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-    return arr.map();
+    return arr.map(item => Object.assign(item, {isHungry: true}));
 }
 
 /*
@@ -47,7 +47,7 @@ Output:
 ]*/
 
 export function makeShoutingArray(arr) {
-    return [];
+    return arr.map(item => toUpperCase(item.name));
 }
 
 
