@@ -42,7 +42,7 @@ etc
 */
 
 export function makeWeirdStringFromKeys(someObject) {
-    return Object.values(someObject.ToString());
+    return Object.keys(someObject).join('');
 }
 
 
