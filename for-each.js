@@ -6,8 +6,12 @@ Output:
 ['spot', 'rover', 'jumpy', 'einstein']
 */
 
-export function makeArrayOfNames(arr) {
-    return [];
+export function makeArrayOfNames(names) {
+    const namesArray = [];
+    names.forEach(element => namesArray.push(element.name) 
+    );
+
+    return namesArray;
 }
 
 /*
